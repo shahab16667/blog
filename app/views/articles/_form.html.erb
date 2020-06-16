@@ -11,14 +11,10 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form">
     <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :body %>
     <%= form.text_area :body %>
+    <%= form.input :photo, as: :file %>
   </div>
 
   <div class="actions">
